@@ -1,1 +1,4 @@
-%h1 Este es mi texto de prueba con haml #Index 
+- @recipe.each do |recipe|
+  = link_to recipe do
+    = image_tag recipe.image.ulr(:medium)
+  %h2= link_to recipe.title, recipe
