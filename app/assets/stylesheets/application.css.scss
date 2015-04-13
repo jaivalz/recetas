@@ -30,7 +30,7 @@ body {
 }
 
 .main_content {
-	padding: 0 0 50px 0;
+	padding: 0 0 50px 0px;
 }
 
 .alert {
@@ -59,6 +59,7 @@ body {
 }
 
 .recipe {
+  margin-left: 35px;
 	background: white;
 	border-radius: 5px;
 	margin-bottom: 40px;
@@ -80,7 +81,7 @@ body {
 	}
 	h2 {
 		padding: 15px 5%;
-		margin: 0;
+		margin-left: 50px;
 		font-size: 20px;
 		font-weight: normal;
 		line-height: 1.5;
@@ -94,15 +95,31 @@ body {
 	margin-bottom: 50px;
 }
 
-#recipe_info, #ingredients, #directions {
-	background: white;
+#recipe_info{
+	margin-left: 20px;
+  background: white;
 	@include box-shadow;
 	min-height: 360px;
+  width: 800px;
 	border-radius: 5px;
 	padding: 2em 8%;
+  
+}
+
+
+#ingredients, #directions {
+	margin-left: 50px;
+  background: white;
+	@include box-shadow;
+	min-height: 360px;
+  width: 550px;
+	border-radius: 5px;
+	padding: 2em 8%;
+  
 }
 
 .recipe_image {
+  margin-left: 50px;
 	max-width: 100%;
 	border-radius: 5px;
 	@include box-shadow;
